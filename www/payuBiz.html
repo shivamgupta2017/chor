@@ -1,0 +1,21 @@
+<ion-view>
+    <ion-content >
+	<form name="sendParam" method="post" action="https://test.payu.in/_payment ">
+				<input type="hidden" name="key" value="gtKFFx" />
+				<input type="hidden" name="txnid" value="shivamguptatesting12345678" />
+				<input type="hidden" name="amount" value="10.0" />
+				<input type="hidden" name="productinfo" value="oxygenconcentrator" />
+				<input type="hidden" name="firstname" value="shivam" />
+				<input type="hidden" name="email" value="shivamgupta1430@gmail.com" />
+				<input type="hidden" name="phone" value="9993330227" />
+				<input type="hidden" name="surl" value="https://payu.herokuapp.com/success" />
+				<input type="hidden" name="Furl" value="https://payu.herokuapp.com/failure" />
+				<input type="hidden" name="Hash" value="e32ef1c7f0442bf02d7e47101679cfac8924291c2dfa28f47f13da66a266e450dff8e3495746079c3421574bdb028f07ba2fa11367665437e0bd07ec4efce860"/>
+				 <input type="submit" value="enter" style="position: absolute; left: -9999px"/> 
+		 </form > 
+
+<script>
+document.sendParam.submit();
+</script>
+ </ion-content>
+</ion-view>
