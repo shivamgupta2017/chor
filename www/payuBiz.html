@@ -1,21 +1,68 @@
+
+<!-- gtKFFx -->
+        <!-- <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>  --> 
+
+
 <ion-view>
-    <ion-content >
-	<form name="sendParam" method="post" action="https://test.payu.in/_payment ">
-				<input type="hidden" name="key" value="gtKFFx" />
-				<input type="hidden" name="txnid" value="5312459258" />
-				<input type="hidden" name="amount" value="10.0" />
-				<input type="hidden" name="productinfo" value="oxygenconcentrator" />
-				<input type="hidden" name="firstname" value="shivam" />
-				<input type="hidden" name="email" value="shivamgupta1430@gmail.com" />
-				<input type="hidden" name="phone" value="9993330227" />
-				<input type="hidden" name="surl" value="https://payu.herokuapp.com/success" />
+    <ion-content>
+	<form name="payuForm" method="post" action="http://minbazaar.com/admin/test.php">
+				<!-- <input id="key" type="hidden" name="key" value="38e9tU45" />
+				<input id="txnid" type="hidden" name="txnid" value="8660018206" />
+				<input id="amount" type="hidden" name="amount" value="15.0" />
+				<input id="productinfo" type="hidden" name="productinfo" value="recharge" />
+				<input id="firstname" type="hidden" name="firstname" value="deepak" />
+				<input id="email" type="hidden" name="email"  value="dpkchaudhary337@gmail.com" />
+				<input id="phone" type="hidden" name="phone" value="9462929419" />
+				<input  type="hidden" name="surl" value="https://payu.herokuapp.com/success" />
 				<input type="hidden" name="Furl" value="https://payu.herokuapp.com/failure" />
-				<input type="hidden" name="Hash" value="56aa7a28d021457e633395ed50cd09030daae5ceb022993a9296835413e2ae782ab19e91919d8c4aed1828ba5f1e030bd440a099983fcbd5635a1cb5a08501d1"/>
-				 <input type="submit" value="enter" style="position: absolute; left: -9999px"/> 
+				<input id="Hash" type="hidden" name="Hash" value="5cc50c4cefdb069e0a43963ec55000964fddbb65010428aca27c107b1824ef02805a587fdeb33bfc4c0bdf5850e0644731bf98e265abc3f8da72383814e86db0"/> -->
+				<input type="submit" value="enter" style="position: absolute; left: -9999px"/> 
 		 </form > 
 
-<script>
-document.sendParam.submit();
+
+<script type="text/javascript">
+	
+
+        	document.payuForm.submit();
+
 </script>
+<!-- <script>
+function findGetParameter(parameterName) {
+    var result = null,
+        tmp = [];
+    location.search
+        .substr(1)
+        .split("&")
+        .forEach(function (item) {
+          tmp = item.split("=");
+          if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
+        });
+    return result;
+}
+
+try
+{
+	$('form[name="payuForm"] input[name="key"]').val(findGetParameter('key'));
+	$('form[name="payuForm"] input[name="txnid"]').val(findGetParameter('txnid'));
+	$('form[name="payuForm"] input[name="amount"]').val(findGetParameter('amount'));
+	$('form[name="payuForm"] input[name="email"]').val(findGetParameter('email'));
+	$('form[name="payuForm"] input[name="productinfo"]').val(findGetParameter('productinfo'));
+	$('form[name="payuForm"] input[name="phone"]').val(findGetParameter('phone'));
+	$('form[name="payuForm"] input[name="Hash"]').val(findGetParameter('Hash'));
+	$('form[name="payuForm"] input[name="firstname"]').val(findGetParameter('firstname'));	
+ 
+        	document.payuForm.submit();
+
+		
+
+
+}
+catch(e)
+{
+	alert('exception e:'+e);
+}
+
+
+</script> -->
  </ion-content>
 </ion-view>
